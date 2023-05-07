@@ -1,0 +1,162 @@
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+.caja{
+    width: 70%;
+    position: relative;
+    margin:0 auto;
+}
+nav{
+    position: absolute;
+    top: 125px;
+    right: 200px;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+.productos{
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+.productos li:hover{
+    border-color:#c78c19;
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.productos li:hover>h2{
+    font-size: 32px;
+}
+.productos li:active{
+    border-color: green;
+}
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer{
+    background-image: url('imagenes/bg.jpg');
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+main{
+    width: 70%;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+}
+.input-padron, form textarea{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+form label, form legend{
+    display: block;
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.submit{
+    font-size: 18px;
+    width: 35%;
+    padding: 10px 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 1s all;
+    cursor: pointer;
+}
+.submit:hover{
+    background: darkorange;
+    transform: scale(1.2);
+    /*transform: scale(3) rotate(800deg);*/
+}
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+@media screen and (max-width:540px){
+    h1.logo{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .navegacion{
+        font-size: 18px;
+    }
+    .caja{
+        width: auto;
+    }
+    .input-padron{
+        padding:10px 20px;
+    }
+    .submit{
+        width: 70%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width:550px){
+    .logo{
+        padding: 0 0 0 50px;
+    }
+    nav{
+        position: absolute;
+        top: 150px;
+        right: 100px;
+    }
+    .navegacion{
+        font-size: 18px;
+    }
+    .caja{
+        width: auto;
+    }
+}   
